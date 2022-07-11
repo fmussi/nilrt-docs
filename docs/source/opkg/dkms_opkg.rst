@@ -313,7 +313,6 @@ used.
        |   |-- control
        |   |-- postinst
        |   `-- prerm
-       |-- debian-binary
        `-- usr
            `-- src
                `-- hello-0.1
@@ -331,8 +330,6 @@ things with the other items being optional:
 2. The data files to be installed in their proper directory structure.
    In this tutorial, these files are the same as used when testing the
    DKMS module previously.
-3. A *debian-binary* file denoting the version of the \*.ipk/\*.deb
-   standard used
 
 The optional components required for a DKMS module are:
 
@@ -369,7 +366,7 @@ it.
    Priority: option
    Depends: dkms
 
-The debian-binary File
+The debian-binary File (created automatically when building)
 ----------------------
 
 This file should be a text file containing only the following line, as
